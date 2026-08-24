@@ -6,7 +6,7 @@ export const Footer = () => {
   const isTraditional = i18n.resolvedLanguage === 'zh-TW'
   const copy = isTraditional
     ? {
-        explore: '流行榜',
+        explore: '入圍作品',
         jury: '評審',
         methodology: '評分方法',
         submission: '投稿',
@@ -14,7 +14,7 @@ export const Footer = () => {
         company: '香港國際人工智能影視有限公司',
       }
     : {
-        explore: 'Ranking',
+        explore: 'Official Selection',
         jury: 'Jury',
         methodology: 'Methodology',
         submission: 'Submission',

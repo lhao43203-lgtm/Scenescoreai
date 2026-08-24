@@ -35,7 +35,7 @@ export default function Submission() {
         message: '作品簡介與連結',
         messagePlaceholder: '請簡述作品、創作團隊與觀看連結…',
         send: '建立投稿郵件',
-        back: '返回流行榜',
+        back: '返回入圍作品',
       }
       : {
         deskTitle: 'Bring the next scene into the index',
@@ -61,7 +61,7 @@ export default function Submission() {
         message: 'WORK NOTE / LINK',
         messagePlaceholder: 'Briefly describe the work, team and viewing link…',
         send: 'CREATE SUBMISSION EMAIL',
-        back: 'RETURN TO RANKING',
+        back: 'RETURN TO OFFICIAL SELECTION',
       }
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {

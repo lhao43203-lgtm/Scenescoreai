@@ -13,7 +13,7 @@ export const Header = () => {
   const uiCopy = isTraditional
     ? {
         home: '首頁',
-        explore: '流行榜',
+        explore: '入圍作品',
         judges: '特邀評審',
         methodology: '評分方法',
         submission: '投稿',
@@ -24,7 +24,7 @@ export const Header = () => {
       }
     : {
         home: 'Home',
-        explore: 'Ranking',
+        explore: 'Official Selection',
         judges: 'Jury Spotlight',
         methodology: 'Behind the Score',
         submission: 'Submission',

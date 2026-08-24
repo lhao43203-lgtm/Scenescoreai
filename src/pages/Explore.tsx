@@ -21,14 +21,13 @@ export default function Explore() {
         list: '列表',
         entry: '作品名稱',
         description: '簡介',
-        score: '評分',
         style: '類型',
         tags: '標籤',
+        notice: '排名不分先後',
         preview: '公開預覽',
         type: '類型',
         play: '播放預覽',
         detail: '查看作品資料',
-        footnote: '分數／狀態會在評分方法確認後公開',
       }
     : {
         filters: { All: 'All', Featured: 'Featured', 'Short Film': 'Short Film', Series: 'Series' },
@@ -37,14 +36,13 @@ export default function Explore() {
         list: 'LIST',
         entry: 'ENTRY',
         description: 'DESCRIPTION',
-        score: 'SCORE',
         style: 'STYLE',
         tags: 'TAGS',
+        notice: 'Listed in no particular order',
         preview: 'PUBLIC PREVIEW',
         type: 'Type',
         play: 'PLAY PREVIEW',
         detail: 'VIEW CASE STUDY',
-        footnote: 'SCORE / STATUS remains unpublished while methodology is being finalized.',
       }
   const filters = ['All', 'Featured', 'Short Film', 'Series']
   const filteredWorks = useMemo(() => filter === 'All' ? works : works.filter((work) => work.type === filter), [filter])
@@ -89,7 +87,6 @@ export default function Explore() {
               event.currentTarget.currentTime = 0
             }}
           />
-          <span className="ranking-row__media-index">{work.index}</span>
           <span className="ranking-row__media-label">{copy.play} <ArrowUpRight aria-hidden="true" /></span>
         </div>
         <div className="ranking-row__body">
@@ -98,7 +95,6 @@ export default function Explore() {
               <strong>{workTitle(work)}</strong>
               <div className="ranking-row__chips"><span>{workStyle(work)}</span><span>{work.year}</span></div>
             </div>
-            <span className="ranking-row__score"><strong>{work.score.toFixed(1)}</strong><small>{copy.score}</small></span>
           </div>
           <p className="ranking-row__description">{workDescription(work)}</p>
           <div className="ranking-row__footer">
@@ -138,12 +134,11 @@ export default function Explore() {
             onMouseEnter={(event) => void event.currentTarget.play()}
             onMouseLeave={(event) => event.currentTarget.pause()}
           />
-          <span className="poster-index">{work.index} <em>/</em> {work.year.slice(2)}</span>
           <span className="poster-title">{workTitle(work)}</span>
           <span className="poster-rec"><i /> REC</span>
           <span className="poster-hover-label">{copy.detail} <ArrowUpRight aria-hidden="true" /></span>
         </div>
-        <div className="work-entry__info"><span>{work.index}</span><strong>{workTitle(work)}</strong><span>{work.year} <em>/</em> {workStyle(work)}</span><span className="status-label">{isTraditional ? '待發布' : work.status}</span><ArrowUpRight aria-hidden="true" /></div>
+        <div className="work-entry__info"><strong>{workTitle(work)}</strong><span>{work.year} <em>/</em> {workStyle(work)}</span><span className="status-label">{isTraditional ? '待發布' : work.status}</span><ArrowUpRight aria-hidden="true" /></div>
       </Link>
     )
   }
@@ -162,18 +157,18 @@ export default function Explore() {
         </div>
       </div>
 
+      <p className="explore-order-notice">{copy.notice}</p>
+
       <section className={view === 'list' ? 'ranking-table' : 'work-collection work-collection--grid'} aria-live="polite">
         {view === 'list' ? (
           <>
             <div className="ranking-table__head" aria-hidden="true">
-              <span>{copy.entry}</span><span>{copy.description} · {copy.score} · {copy.style} · {copy.tags}</span>
+              <span>{copy.entry}</span><span>{copy.description} · {copy.style} · {copy.tags}</span>
             </div>
             {filteredWorks.map(renderRankingRow)}
           </>
         ) : filteredWorks.map(renderGridEntry)}
       </section>
-
-      <div className="explore-footnote"><span>—</span> {copy.footnote}</div>
     </div>
   )
 }
