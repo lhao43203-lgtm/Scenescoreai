@@ -1,0 +1,47 @@
+[
+  {
+    "id": "4",
+    "title": "进击的巨人 最终季 完结篇",
+    "score": 9.9,
+    "thumbnail": "https://images.unsplash.com/photo-1542451313056-b7c8e6266459?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "十年一剑，史诗落幕。人类赞歌与绝望的完美交织。",
+    "tags": ["史诗", "剧情", "战斗"],
+    "trend": "stable"
+  },
+  {
+    "id": "1",
+    "title": "赛博朋克：边缘行者",
+    "score": 9.8,
+    "thumbnail": "https://images.unsplash.com/photo-1605808360022-d9f28287e1ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "顶级制作，赛博宇宙极致视听体验，扣人心弦的悲剧色彩。",
+    "tags": ["科幻", "热血", "致郁"],
+    "trend": "up"
+  },
+  {
+    "id": "2",
+    "title": "葬送的芙莉莲",
+    "score": 9.7,
+    "thumbnail": "https://images.unsplash.com/photo-1618331835717-801e976710b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "平缓节奏中的治愈与哲思，魔幻世界的新视角探索。",
+    "tags": ["奇幻", "治愈", "冒险"],
+    "trend": "stable"
+  },
+  {
+    "id": "5",
+    "title": "灵能百分百 III",
+    "score": 9.6,
+    "thumbnail": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "骨头社的作画盛宴，关于青春与成长的最终解答。",
+    "tags": ["超能力", "青春", "热血"],
+    "trend": "up"
+  },
+  {
+    "id": "3",
+    "title": "咒术回战 第二季",
+    "score": 9.5,
+    "thumbnail": "https://images.unsplash.com/photo-1578632767115-351597cf2477?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "行云流水的动作设计与震撼的涉谷事变群像剧。",
+    "tags": ["战斗", "奇幻", "热血"],
+    "trend": "down"
+  }
+]

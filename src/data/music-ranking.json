@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "title": "天机",
+    "artist": "Melodic AI",
+    "score": 9.6,
+    "thumbnail": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "融合古典丝弦与现代电子编曲，AI 在音律结构中植入东方哲学意象，层次丰富、余韵悠长。",
+    "tags": ["国风", "电子", "器乐"],
+    "platform": "网易云音乐 / Spotify",
+    "trend": "up"
+  },
+  {
+    "id": "2",
+    "title": "Neural Wave",
+    "artist": "SynthMind",
+    "score": 9.4,
+    "thumbnail": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "以神经网络生成的纯电子音景，波形演进如同意识流动，是 AI 音乐探索频率边界的代表作。",
+    "tags": ["电子", "氛围", "实验"],
+    "platform": "SoundCloud / Spotify",
+    "trend": "up"
+  },
+  {
+    "id": "3",
+    "title": "破晓",
+    "artist": "DawnCore AI",
+    "score": 9.2,
+    "thumbnail": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "AI 主导的华语 R&B 创作，人声合成极具情感张力，编曲细节经过数十万次迭代优化。",
+    "tags": ["R&B", "华语", "人声合成"],
+    "platform": "QQ音乐 / Apple Music",
+    "trend": "stable"
+  },
+  {
+    "id": "4",
+    "title": "墨迹",
+    "artist": "InkSound AI",
+    "score": 9.1,
+    "thumbnail": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "将水墨画的留白美学转化为音符语言，古筝、琵琶与 AI 生成弦乐交织，意境深远。",
+    "tags": ["古风", "器乐", "国韵"],
+    "platform": "网易云音乐 / 酷狗",
+    "trend": "stable"
+  },
+  {
+    "id": "5",
+    "title": "Echo Chamber",
+    "artist": "Reverb Labs",
+    "score": 8.9,
+    "thumbnail": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "AI 构建的多维度回声空间，每次播放都略有差异，探索程序音乐与聆听者情绪的动态互动。",
+    "tags": ["氛围", "程序音乐", "实验"],
+    "platform": "Bandcamp / SoundCloud",
+    "trend": "down"
+  }
+]

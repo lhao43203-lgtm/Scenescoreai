@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "name": "Sora",
+    "company": "OpenAI",
+    "score": 9.8,
+    "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "业界领先的文本转视频模型，支持长达 60 秒的高质量视频生成，物理世界理解能力出众，是 AI 影视制作的核心工具。",
+    "tags": ["视频生成", "文生视频", "OpenAI"],
+    "category": "视频生成",
+    "website": "https://sora.com",
+    "trend": "up"
+  },
+  {
+    "id": "2",
+    "name": "Runway Gen-4",
+    "company": "Runway",
+    "score": 9.5,
+    "thumbnail": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "专业级 AI 视频生成与编辑平台，提供图生视频、视频扩展、动作迁移等全套工具，深受影视从业者青睐。",
+    "tags": ["视频生成", "图生视频", "专业级"],
+    "category": "视频生成",
+    "website": "https://runwayml.com",
+    "trend": "up"
+  },
+  {
+    "id": "3",
+    "name": "Udio",
+    "company": "Udio AI",
+    "score": 9.3,
+    "thumbnail": "https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "顶级 AI 音乐创作平台，支持多风格、多语言歌词与旋律生成，输出质量接近专业录音室水准。",
+    "tags": ["音乐生成", "歌曲创作", "多风格"],
+    "category": "音乐生成",
+    "website": "https://udio.com",
+    "trend": "up"
+  },
+  {
+    "id": "4",
+    "name": "ElevenLabs",
+    "company": "ElevenLabs",
+    "score": 9.2,
+    "thumbnail": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "业界最真实的 AI 配音与声音克隆工具，支持 30+ 语言，情感表现力极强，是 AI 短剧配音的首选方案。",
+    "tags": ["AI配音", "声音克隆", "多语言"],
+    "category": "音频 / 配音",
+    "website": "https://elevenlabs.io",
+    "trend": "stable"
+  },
+  {
+    "id": "5",
+    "name": "Midjourney v7",
+    "company": "Midjourney",
+    "score": 9.1,
+    "thumbnail": "https://images.unsplash.com/photo-1547954575-855750c57bd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "AI 图像生成领域的标杆工具，最新版本在人物一致性与风格控制上大幅提升，是 AI 漫剧分镜制作的核心利器。",
+    "tags": ["图像生成", "分镜制作", "风格迁移"],
+    "category": "图像生成",
+    "website": "https://midjourney.com",
+    "trend": "stable"
+  },
+  {
+    "id": "6",
+    "name": "CapCut AI",
+    "company": "ByteDance",
+    "score": 8.8,
+    "thumbnail": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "面向大众的一站式 AI 视频剪辑平台，内置自动字幕、AI 配乐、智能剪辑等功能，大幅降低短剧制作门槛。",
+    "tags": ["视频剪辑", "一站式", "大众工具"],
+    "category": "视频剪辑",
+    "website": "https://capcut.com",
+    "trend": "up"
+  }
+]

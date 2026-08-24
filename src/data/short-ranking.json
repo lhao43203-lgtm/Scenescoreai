@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "title": "无双战神在都市",
+    "score": 8.9,
+    "thumbnail": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "节奏紧凑的爽文短剧，反转不断，情绪价值拉满。",
+    "tags": ["都市", "热血", "逆袭"],
+    "trend": "up"
+  },
+  {
+    "id": "2",
+    "title": "豪门废婿的逆袭",
+    "score": 8.5,
+    "thumbnail": "https://images.unsplash.com/photo-1507676184212-d0c30a514800?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "经典废柴流开局，打脸剧情密集，观众直呼过瘾。",
+    "tags": ["豪门", "赘婿", "打脸"],
+    "trend": "down"
+  },
+  {
+    "id": "3",
+    "title": "千金归来",
+    "score": 8.7,
+    "thumbnail": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "女性向复仇爽剧代表作，演技在线，服化道精良。",
+    "tags": ["复仇", "大女主", "职场"],
+    "trend": "stable"
+  },
+  {
+    "id": "4",
+    "title": "回到过去做首富",
+    "score": 8.2,
+    "thumbnail": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "年代重生文改编，怀旧氛围浓厚，商业版图拓展线爽感足。",
+    "tags": ["重生", "商战", "年代"],
+    "trend": "up"
+  },
+  {
+    "id": "5",
+    "title": "神医下山",
+    "score": 8.4,
+    "thumbnail": "https://images.unsplash.com/photo-1584308666744-24d5e4b77f88?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "description": "古医术与现代都市碰撞，装X打脸流畅自然。",
+    "tags": ["神医", "都市", "武侠"],
+    "trend": "down"
+  }
+]
