@@ -10,13 +10,6 @@ import { works } from '../data/sceneScore'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const homeWorkChanges = [
-  { change: '↓1', trend: 'down' },
-  { change: '↓1', trend: 'down' },
-  { change: '↑1', trend: 'up' },
-  { change: '↓1', trend: 'down' },
-] as const
-
 const homeWorkCards = works.slice(1, 5)
 const homeWorkCarouselCards = [...homeWorkCards, ...homeWorkCards, ...homeWorkCards]
 
@@ -181,29 +174,26 @@ export default function Home() {
       }
   const featuredCopy = isTraditional
     ? {
-        rank: '名次 / 01',
-        summary: '把一個清晰可讀的示意結果放回影像、創作者與作品語境之中',
-        note: '第一個公開排名項目的預覽資料，等待正式評分規程確認',
-        change: '變化',
+        heading: '入圍作品集錦',
+        description: '每一部入圍作品，都經過評審團隊嚴謹、獨立且多維度的專業評估。評審從故事表達、視覺呈現、創意創新、技術完成度及整體感染力等方面進行綜合考量，最終遴選出兼具品質與潛力的優秀作品。這不僅是一場精彩內容的集中呈現，更是對創作者專業能力與探索精神的肯定。',
         details: '查看作品詳情',
       }
     : {
-        rank: 'RANK / 01',
-        summary: 'Return a clear, readable sample result to the context of the image, its maker and the work.',
-        note: 'Preview data for the first public ranking entry, pending confirmation of the formal scoring protocol.',
-        change: 'CHANGE',
+        heading: 'Official Selection Showcase',
+        description: 'Every selected work has undergone a rigorous, independent and multidimensional professional evaluation by the jury. The jury considers storytelling, visual presentation, creative innovation, technical execution and overall emotional impact, ultimately selecting outstanding works with both quality and potential. More than a showcase of compelling content, this selection recognizes the creators’ professional ability and spirit of exploration.',
         details: 'VIEW WORK DETAILS',
       }
 
   const sectionCopy = isTraditional
     ? {
-        worksAria: 'Scene Score TOP 2—10 作品輪播',
-        highlightAria: 'Scene Score TOP 1 精選作品',
+        worksAria: 'Scene Score 入圍優秀作品輪播',
+        highlightAria: 'Scene Score 入圍作品集錦',
         highlight: 'HIGHLIGHT',
         director: '導演',
         viewWork: '查看作品',
-        rankingAria: '查看完整流行榜',
-        viewRanking: '查看完整流行榜',
+        worksTitle: '入圍優秀作品',
+        rankingAria: '查看全部入圍作品',
+        viewRanking: '查看全部入圍作品',
         howTitle: '透明始於設計',
         howSoul: '具體落實於實踐',
         howDescription: 'Scene Score 將在正式排名發布前公開評分維度、權重與異常處理方式',
@@ -212,13 +202,14 @@ export default function Home() {
         pending: '待確認',
       }
     : {
-        worksAria: 'Scene Score TOP 2—10 works carousel',
-        highlightAria: 'Scene Score TOP 1 highlighted work',
+        worksAria: 'Scene Score official selection highlights carousel',
+        highlightAria: 'Scene Score official selection showcase',
         highlight: 'HIGHLIGHT',
         director: 'DIRECTOR',
         viewWork: 'VIEW WORK',
-        rankingAria: 'View full ranking',
-        viewRanking: 'VIEW FULL RANKING',
+        worksTitle: 'Official Selection Highlights',
+        rankingAria: 'View the Official Selection',
+        viewRanking: 'VIEW THE OFFICIAL SELECTION',
         howTitle: 'Transparent by design',
         howSoul: 'Specific by practice',
         howDescription: 'Scene Score will publish its scoring dimensions, weights and anomaly handling before formal rankings go live.',
@@ -744,31 +735,15 @@ export default function Home() {
           <Reveal className="home-highlight__media">
             <Link to={'/series/' + works[0].id} aria-label={`${sectionCopy.viewWork}: ${works[0].title}`}>
               <AmbientVideo src={works[0].video} className="home-highlight__video" />
-              <span className="home-highlight__index">01</span>
             </Link>
           </Reveal>
 
           <Reveal className="home-highlight__info">
-            <p className="home-highlight__rank" aria-label="Top 1">
-              <span>TOP</span><strong>1</strong>
-            </p>
+            <h2 className="home-highlight__showcase-title">{featuredCopy.heading}</h2>
             <div className="home-highlight__meta">
-              <span>{featuredCopy.rank}</span>
               <span>{sectionCopy.director} / {works[0].director}</span>
             </div>
-            <h3>{works[0].title}</h3>
-            <p className="home-highlight__summary">{featuredCopy.summary}</p>
-            <p className="home-highlight__note">{featuredCopy.note}</p>
-            <div className="home-highlight__metrics">
-              <span>
-                <small>SCENE SCORE</small>
-                <strong>{works[0].score.toFixed(1)}</strong>
-              </span>
-              <span>
-                <small>{featuredCopy.change}</small>
-                <strong className="home-highlight__change">↑2</strong>
-              </span>
-            </div>
+            <p className="home-highlight__description">{featuredCopy.description}</p>
             <Link className="home-highlight__link" to={'/series/' + works[0].id}>
               <span>{featuredCopy.details}</span><ArrowUpRight aria-hidden="true" />
             </Link>
@@ -778,12 +753,7 @@ export default function Home() {
 
       <section id="home-ranking" className="home-section home-section--works">
         <div className="home-works__heading">
-          <h2>
-            <span className="home-works__heading-top">TOP</span>
-            <span className="home-works__range" aria-label={isTraditional ? '第 2 至第 10 名' : 'Ranks 2 to 10'}>
-              <span>2</span><i className="home-works__range-mark" aria-hidden="true" /><span>10</span>
-            </span>
-          </h2>
+          <h2>{sectionCopy.worksTitle}</h2>
         </div>
 
         <div className="home-works__carousel" role="region" aria-label={sectionCopy.worksAria} aria-roledescription="carousel">
@@ -803,7 +773,6 @@ export default function Home() {
             }}
           >
             {homeWorkCarouselCards.map((work, index) => {
-              const change = homeWorkChanges[index % homeWorkChanges.length]
               const cardKey = `${work.id}-${index}`
 
               return (
@@ -823,15 +792,9 @@ export default function Home() {
                   >
                     <span className="home-work-card__media">
                       <HoverPreviewVideo src={work.video} className="home-work-card__video" isActive={activeHomeWork === cardKey} />
-                      <span className="home-work-card__index">{work.index}</span>
                     </span>
                     <span className="home-work-card__info">
                       <strong>{work.title}</strong>
-                      <span className="home-work-card__score">
-                        <small>SCENE SCORE</small>
-                        <b>{work.score.toFixed(1)}</b>
-                      </span>
-                      <span className={`home-work-card__trend is-${change.trend}`}>{change.change}</span>
                       <ArrowUpRight aria-hidden="true" />
                     </span>
                   </Link>
